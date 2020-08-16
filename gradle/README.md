@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `gradle` official image](https://hub.docker.com/_/gradle) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -30,6 +32,8 @@ WARNING:
 -	[`6.6.0-jre11`, `6.6-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/bc176d51b9bb8ddb692660189db41706453c18be/jre11/Dockerfile)
 -	[`6.6.0-jdk14`, `6.6-jdk14`, `jdk14`](https://github.com/keeganwitt/docker-gradle/blob/bc176d51b9bb8ddb692660189db41706453c18be/jdk14/Dockerfile)
 -	[`6.6.0-jre14`, `6.6-jre14`, `jre14`](https://github.com/keeganwitt/docker-gradle/blob/bc176d51b9bb8ddb692660189db41706453c18be/jre14/Dockerfile)
+
+[![ppc64le/gradle build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/gradle.svg?label=ppc64le/gradle%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/gradle/)
 
 # Quick reference (cont.)
 
@@ -62,7 +66,7 @@ WARNING:
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project ppc64le/gradle gradle <gradle-task>`
 
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
