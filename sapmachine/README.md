@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `sapmachine` official image](https://hub.docker.com/_/sapmachine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`14`, `14.0.2`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/a7de58e1065752db7737baeb95ea02796eef43f1/dockerfiles/official/stable/Dockerfile)
--	[`11`, `11.0.8`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/cd2ca5e0de3ca0b167aba34661f1b8f37210f66a/dockerfiles/official/lts/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/sapmachine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/sapmachine.svg?label=arm32v7/sapmachine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/sapmachine/)
 
 # Quick reference (cont.)
 
@@ -63,14 +66,14 @@ Java and all Java-based trademarks and logos are trademarks or registered tradem
 You can pull and test the image with the following commands:
 
 ```console
-docker pull sapmachine:latest
-docker run -it sapmachine:latest java -version
+docker pull arm32v7/sapmachine:latest
+docker run -it arm32v7/sapmachine:latest java -version
 ```
 
 You can also use the SapMachine image as a base image to run your own jar file:
 
 ```dockerfile
-FROM sapmachine:latest
+FROM arm32v7/sapmachine:latest
 RUN mkdir /opt/myapp
 COPY myapp.jar /opt/myapp
 CMD ["java", "-jar", "/opt/myapp/myapp.jar"]
