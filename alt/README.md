@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `alt` official image](https://hub.docker.com/_/alt) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/b811fe4a8858ee240739bff95298f00851c0e845/x86_64/Dockerfile)
--	[`p8`](https://github.com/alt-cloud/docker-brew-alt/blob/5c18e41c74ef9767ca387028957920ee055b8fe0/x86_64/Dockerfile)
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/29eef3c66f24f9fd63beb116c45df5b7eaeb004c/x86_64/Dockerfile)
+-	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/b811fe4a8858ee240739bff95298f00851c0e845/aarch64/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/29eef3c66f24f9fd63beb116c45df5b7eaeb004c/aarch64/Dockerfile)
+
+[![arm64v8/alt build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/alt.svg?label=arm64v8/alt%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/alt/)
 
 # Quick reference (cont.)
 
@@ -71,7 +74,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `arm64v8/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `arm64v8/alt:p9`).
 
 ## How It's Made
 
