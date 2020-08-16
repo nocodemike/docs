@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `amazoncorretto` official image](https://hub.docker.com/_/amazoncorretto) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8u265`, `8u265-al2`, `8-al2-full`, `8-al2-jdk`, `latest`](https://github.com/corretto/corretto-docker/blob/fa556a8d84f2d2f39b1925b15f4fb7ebd3e6e4ed/8/jdk/al2/Dockerfile)
--	[`11`, `11.0.8`, `11.0.8-al2`, `11-al2-jdk`, `11-al2-full`](https://github.com/corretto/corretto-docker/blob/fa556a8d84f2d2f39b1925b15f4fb7ebd3e6e4ed/11/jdk/al2/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
+
+[![arm32v5/amazoncorretto build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/amazoncorretto.svg?label=arm32v5/amazoncorretto%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/amazoncorretto/)
 
 # Quick reference (cont.)
 
