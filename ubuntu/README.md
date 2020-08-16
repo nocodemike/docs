@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20200713`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/3d44d0b838eeb78c5baee976a4a529976b326878/bionic/Dockerfile)
--	[`20.04`, `focal-20200720`, `focal`, `latest`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/3d44d0b838eeb78c5baee976a4a529976b326878/focal/Dockerfile)
--	[`20.10`, `groovy-20200723`, `groovy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/3d44d0b838eeb78c5baee976a4a529976b326878/groovy/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/3d44d0b838eeb78c5baee976a4a529976b326878/trusty/Dockerfile)
--	[`16.04`, `xenial-20200706`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/3d44d0b838eeb78c5baee976a4a529976b326878/xenial/Dockerfile)
+-	[`18.04`, `bionic-20200713`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/59753d5e8c4eea1af8ed9e617d5d1cfa929ee948/bionic/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/59753d5e8c4eea1af8ed9e617d5d1cfa929ee948/trusty/Dockerfile)
+-	[`16.04`, `xenial-20200706`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/59753d5e8c4eea1af8ed9e617d5d1cfa929ee948/xenial/Dockerfile)
+
+[![i386/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/ubuntu.svg?label=i386/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/ubuntu/)
 
 # Quick reference (cont.)
 
@@ -63,9 +65,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `i386/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `i386/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `i386/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `couchbase` official image](https://hub.docker.com/_/couchbase) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `6.6.0`, `enterprise-6.6.0`](https://github.com/couchbase/docker/blob/f0ab8e5c7fc1091465097dc231cd5586f3eb7355/enterprise/couchbase-server/6.6.0/Dockerfile)
--	[`community`, `community-6.5.1`](https://github.com/couchbase/docker/blob/f17df7695bbd6efb756b90b683bd5f34d08b5708/community/couchbase-server/6.5.1/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
+
+[![i386/couchbase build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/couchbase.svg?label=i386/couchbase%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/couchbase/)
 
 # Quick reference (cont.)
 
