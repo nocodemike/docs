@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `elasticsearch` official image](https://hub.docker.com/_/elasticsearch) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.8.1`](https://github.com/docker-library/elasticsearch/blob/5f77876bff63a699806e21e7ce3b23f264caf86e/7/Dockerfile)
--	[`6.8.11`](https://github.com/docker-library/elasticsearch/blob/a307d268b244992f796b73ea51d9e25db0f8acb1/6/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/elasticsearch build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/elasticsearch.svg?label=s390x/elasticsearch%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/elasticsearch/)
 
 # Quick reference (cont.)
 
